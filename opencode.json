@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "target-github-server": {
+      "type": "local",
+      "command": ["/home/vboxuser/Documents/Proxy/.venv/bin/python", "/home/vboxuser/Documents/Proxy/proxy.py"],
+      "enabled": true,
+      "environment": {
+        "TARGET_CMD": "/home/vboxuser/Documents/Testing-MCP/.venv/bin/python",
+        "TARGET_ARGS": "/home/vboxuser/Documents/Testing-MCP/server.py",
+        "LOCAL_LOG_PATH": "/home/vboxuser/Documents/Proxy/logs/proxy.jsonl",
+        "GITHUB_API_BASE": "http://localhost:8080",
+        "GITHUB_TOKEN": "mock-token"
+      }
+    }
+  }
+}
